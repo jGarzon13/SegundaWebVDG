@@ -1,0 +1,81 @@
+
+header {
+    width: 96%;
+    background: #FFFFFF10;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 45px;
+  }
+  
+  /* Centrado absoluto de navbar */
+  header .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  header .navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  header .navbar ul li a {
+    font-size: 1.5rem;
+    color: var(--azul);
+    transition: .2s;
+  }
+  header .navbar ul li p {
+      font-size: 1.5rem;
+      color: var(--azul);
+      transition: .2s;
+    }
+  
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover,header .navbar ul li p.active,
+  header .navbar ul li p:hover {
+    color: var(--celeste);
+  }
+  
+  /* Login ícono a la derecha */
+  header .izq {
+    font-size: 2rem;
+    color: var(--azul);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  header .fa-bars {
+      font-size: 3rem;
+      color: var(--azul);
+      cursor: pointer;
+      display: none;
+      transition: .2s;
+  }
+  
+  header.fa-times {
+      transform: rotate(180deg);
+      color: var(--celeste);
+  }
+  

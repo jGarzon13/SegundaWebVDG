@@ -1,0 +1,143 @@
+/* Footer */
+.footer {
+    background: #fff;
+    padding: 2rem 5rem;
+    color: #666;
+    display: flex;
+    flex-direction: column; /* Organiza las secciones en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 2rem; /* Espaciado entre secciones */
+}
+
+.footer .credits {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.footer .credit-list p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.footer .additional-references {
+    margin-top: 1rem;
+}
+
+.footer .references {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaciado entre elementos */
+}
+
+.footer .reference {
+    flex: 1;
+    min-width: 200px; /* Establece un ancho mínimo para las referencias */
+}
+
+.footer .reference strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer .reference ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .reference ul li {
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+    color: #666;
+    margin: 0.3rem 0; /* Espaciado vertical reducido */
+}
+
+.alliance-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaciado entre los logos */
+}
+
+.alliance-logos img {
+    height: 4rem; /* Tamaño ajustado para los logos */
+    transition: transform 0.2s;
+}
+
+.alliance-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo para secciones adicionales */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer .credits, .footer .alliances {
+        width: 100%;
+    }
+
+    .footer .references {
+        flex-direction: column; /* Organiza las referencias en columna en dispositivos móviles */
+    }
+
+    .footer .reference {
+        min-width: 100%; /* Ajusta el ancho mínimo en dispositivos móviles */
+    }
+}
+/* Sección de Tecnologías */
+#tecnologias {
+    background: var(--celeste);
+    padding: 5rem 0;
+}
+
+#tecnologias h2 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3rem;
+    letter-spacing: .2rem;
+}
+
+#tecnologias .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tecnologia {
+    height: 39rem;
+    width: 35rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    margin: 1.5rem;
+    padding: 2rem;
+    transition: .2s;
+}
+
+.tecnologia img {
+    height: 8rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.tecnologia h3 {
+    font-size: 2rem;
+    color: var(--azul);
+    margin: 1rem 0;
+}
+
+.tecnologia p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.tecnologia a {
+    color: var(--azul);
+    text-decoration: underline;
+}

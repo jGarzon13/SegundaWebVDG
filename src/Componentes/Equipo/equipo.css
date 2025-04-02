@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --azul:#B7BE57;
+    --celeste:#D3DBAA;
+    --arena:#FFFFFF;
+    --arenablanca:#F2E5B9;
+
+}
+*{
+    font-family:'Poppins',sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+.alumnos{
+    background: var(--azul);
+}
+.alumnos h1{
+    color: #fff;
+}
+
+.alumnos .card-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.alumnos .card-container .card{
+padding: 2rem;
+margin: 2rem;
+background: #fff;
+text-align: center;
+width: 28rem;
+box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+
+
+}
+.alumnos .card-container .card img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover; 
+    transition: .2s;
+    filter: grayscale(0);
+    transition: .2s;
+}
+.alumnos .card-container .card:hover img {
+    filter: grayscale();
+}
+.alumnos .card-container .card h3{
+   color: var(--azul);
+   font-size: 2rem;
+   padding: .5rem 0;
+}
+.alumnos .card-container .card p{
+    font-size: 1.7rem;
+    color: #666;
+     
+ }
+ .alumnos .card-container .card .icons a{
+    font-size: 1.9rem;
+    padding: 1.5rem .5rem;
+    color:var(--azul); 
+ }
+ .alumnos .card-container .card .icons a :hover{
+    color:var(--celeste);  
+ }
+@media(max-width:768px){
+
+    html{
+    font-size: 55%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: -100rem; left: 0;
+        width: 100%;
+        background: var(--arena);
+        border-radius: 1rem;
+        opacity: 0;
+        transition: 2s linear;
+    }
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li a{
+        font-size: 3rem;
+        display: block;
+    }
+    header .nav-toggle{
+        top: 5.5rem;
+        opacity: 1;
+    }
+
+
+
+
+}

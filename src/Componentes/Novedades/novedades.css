@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --azul:#B7BE57;
+    --celeste:#D3DBAA;
+    --arena:#FFFFFF;
+    --arenablanca:#F2E5B9;
+
+}
+*{
+    font-family:'Poppins',sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background:var(--celeste) ;
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.home{
+    min-height:60vh;
+    background: linear-gradient(
+        rgba(100, 130, 173, 0.7), 
+        rgba(127, 161, 195, 0.6), 
+        rgba(226, 218, 214, 0.5), 
+        rgba(245, 237, 237, 0.4)
+      ), url('https://res.cloudinary.com/dj9nrp8r8/image/upload/v1743541164/i33kc2nh28skuyrvkmed.jpg') no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    z-index:0 ;
+    overflow: hidden;
+    position: relative;
+    margin: auto auto 0 auto;
+}
+.home .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+.home .content h1{
+    font-size: 5rem;
+    color: #FFFFFF;
+    padding: 0 1rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    text-transform: uppercase;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.box-container .box{
+    height: 50rem;
+    width: 45rem ;
+    background: whitesmoke;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    margin:1.5rem ;
+    cursor: pointer;  
+}
+.box-container h2 {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 24px;
+    margin-top: 11rem; /* 👈 nuevo */
+    margin-bottom: 2rem; /* ya estaba */
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+  }
+  
+
+
+.box img {
+ height: 6rem;
+ width: 6rem;
+ line-height: 6rem;
+ transition: .2s;
+}
+
+.box-container .box h3 {
+    font-size: 2rem;
+    color: var(--azul);
+    transition: .2s;
+    padding: 1.5rem 2rem;
+
+}
+
+.box-container .box p {
+    font-size: 1.3rem;
+    padding: 1.5rem 2rem;
+    color: #666; 
+}
+
+.box ul {
+    padding-left: 2.5rem; /* sangría izquierda */
+    text-align: left;
+  }
+  
+  .box ul li {
+    font-size: 1.3rem;
+    color: #666;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+
+.home::before {
+    content: '';
+    position: absolute;
+    bottom: -45rem; /* Ajusta según la posición deseada */
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 80vh solid var(--arenablanca); /* Corrige la referencia a la variable de color */
+    width: 120%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--azul);
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 6rem;
+    letter-spacing: 2rem;
+    font-weight: 500;
+}
+.title{
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--celeste);
+    
+}
+
+.about {
+    background: var(--arenablanca);
+    padding-bottom: 2rem;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto; 
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+    max-width: 60%;
+}
+
+.project-content h3, .project-content h4, .project-content p, .project-content ul {
+    margin:   0 auto;
+}
+
+.project-content button {
+    height: 3.5rem;
+    width: 17rem;
+    background: var(--azul);
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+    margin-top: 2rem; /* 👈 separa el botón del párrafo */
+    
+  }
+  
+
+.project-content button:hover {
+    letter-spacing: .2rem;
+    opacity: .8;
+}
+
+@media (max-width: 768px) {
+  
+  
+    .project-content {
+        max-width: 100%;
+        text-align: center; 
+        /* Centrar contenido */
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        font-size: 1.6rem;
+        
+    }
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .box-container .box {
+        width: 90%;
+        margin: 2rem 0;
+      }
+    
+
+    
+}
