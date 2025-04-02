@@ -1,0 +1,62 @@
+.hud-container {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--arenablanca);
+    min-height: auto;
+}
+
+.hud-container h1 {
+    font-size: 4rem;
+    color: var(--azul);
+    text-align: center;
+    padding: 0 1rem;
+    letter-spacing: 2rem;
+    font-weight: 500;
+}
+
+.hud-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hud-card {
+    background: var(--arena);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 600px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hud-card:hover {
+    transform: translateY(-5px);
+}
+
+.hud-card h2 {
+    font-size: 2rem;
+    color: var(--azul);
+
+}
+
+.hud-card p {
+    font-size: 1.4rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .hud-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hud-card {
+        width: 90%;
+        margin: 2rem 0;
+    }
+}

@@ -60,12 +60,13 @@ const App = () => {
         {/* Resto de los componentes de la aplicación */}
         <Home />
         <Equipo />
-        <Footer />
+       
         <Novedades handleModalOpen={handleModalOpen} />
         <Personajes handleModalOpen={handleModalOpen} />
         <Tipografia/>
         <PaletaColores/>
         <HUD/>
+        <Footer />
       </>
     </Router> 
   );

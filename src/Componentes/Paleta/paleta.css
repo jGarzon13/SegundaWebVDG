@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --azul: #B7BE57;
+    --celeste: #D3DBAA;
+    --arena: #FFFFFF;
+    --arenablanca: #F2E5B9;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colores-container {
+    background: var(--azul);
+    text-align: center;
+    padding: 4rem 2rem;
+    min-height: auto;
+}
+
+.colores-container h1{
+    font-size: 4rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0 1rem;
+    
+    letter-spacing: 2rem;
+    font-weight: 500;
+}
+
+.colores-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.color-card {
+    padding: 2rem;
+    background: var(--arena);
+    text-align: center;
+    width: 28rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.color-card:hover {
+    transform: translateY(-5px);
+}
+
+.color-card h2 {
+    font-size: 2rem;
+    color: var(--azul);
+    padding: 0.5rem 0;
+}
+
+.color-card p {
+    font-size: 1.7rem;
+    color: #666;
+}

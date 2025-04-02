@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../Firebase/config";  // Asegúrate de que la ruta sea correcta
+import "./hud.css"
 
 function HUD() {
   const [hudElements, setHudElements] = useState([]);

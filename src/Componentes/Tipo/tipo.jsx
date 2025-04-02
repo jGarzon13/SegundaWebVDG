@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
-import { db } from "../Firebase/config";  // Asegúrate de que la ruta sea correcta
+import { db } from "../Firebase/config"; 
+import "./tipo.css";
 
 function Tipografia() {
   const [tipografias, setTipografias] = useState([]);
