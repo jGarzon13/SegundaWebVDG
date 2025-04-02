@@ -8,6 +8,9 @@ import Footer from "./Componentes/Footer/footer";
 import Novedades from "./Componentes/Novedades/novedades";
 import Personajes from "./Componentes/Personajes/Personajes";
 import Crea from "./Componentes/Crear/Crea"; // Asegúrate de importar el componente de creación
+import Tipografia from "./Componentes/Tipo/tipo";
+import PaletaColores from "./Componentes/Paleta/Paleta";
+import HUD from "./Componentes/Hud/hud";
 
 const App = () => {
   const [loginModalVisible, setLoginModalVisible] = useState(false); // Para el modal de Login
@@ -60,6 +63,9 @@ const App = () => {
         <Footer />
         <Novedades handleModalOpen={handleModalOpen} />
         <Personajes handleModalOpen={handleModalOpen} />
+        <Tipografia/>
+        <PaletaColores/>
+        <HUD/>
       </>
     </Router> 
   );
